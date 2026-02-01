@@ -1,5 +1,0 @@
-{
-  "name": "ESP32 Project Generator",
-  "description": "An interactive tool that generates complete ESP32 project plans, including schematics, pinouts, and code, based on user-selected components and project goals. This app is designed for electronics engineers and embedded programmers.",
-  "requestFramePermissions": []
-}
