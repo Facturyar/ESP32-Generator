@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# مولد پروژه ESP32 با هوش مصنوعی
 
-This contains everything you need to run your app locally.
+این یک ابزار تعاملی و هوشمند برای مهندسان الکترونیک و برنامه‌نویسان سیستم‌های امبدد است که به شما امکان می‌دهد به سرعت نقشه‌های کامل پروژه برای میکروکنترلر ESP32 ایجاد کنید.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Wkw01-aE4QnJ89HF1z0zCzOPn9TM6SmT
+با انتخاب هدف پروژه، ماژول‌های مورد نیاز و پروتکل‌های ارتباطی، هوش مصنوعی Gemini یک راهنمای کامل شامل موارد زیر را تولید می‌کند:
+- توضیح دقیق عملکرد پروژه
+- جدول اتصالات (Pinout)
+- شماتیک متنی مدار
+- کد کامل پروژه (Arduino C++ یا MicroPython)
+- نکات مهم و راهکارهای عیب‌یابی
+- پیشنهاداتی برای ارتقاء پروژه
 
-## Run Locally
+## نحوه استفاده
 
-**Prerequisites:**  Node.js
+1.  مرورگر خود را باز کرده و فایل `index.html` را اجرا کنید.
+2.  در پنل سمت راست، مشخصات پروژه خود را وارد کنید:
+    - **نوع برد:** برد استاندارد یا سفارشی خود را مشخص کنید.
+    - **هدف پروژه:** از لیست انتخاب کنید یا با دکمه "جادویی" یک ایده جدید از هوش مصنوعی بگیرید.
+    - **ماژول‌ها و قطعات:** قطعات سخت‌افزاری خود را انتخاب کنید.
+    - **پروتکل ارتباطی:** پروتکل‌های مورد نیازتان را مشخص کنید.
+    - **زبان برنامه‌نویسی:** بین `Arduino C++` و `MicroPython` انتخاب کنید.
+    - **منبع تغذیه:** نوع منبع تغذیه را بنویسید.
+    - **توضیحات سفارشی:** هرگونه نیاز یا منطق خاصی که دارید را در این بخش بنویسید.
+3.  روی دکمه **"تولید نقشه پروژه"** کلیک کنید و منتظر بمانید تا هوش مصنوعی راهنمای کامل را برای شما ایجاد کند.
 
+## استقرار در GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+این پروژه برای استقرار مستقیم روی GitHub Pages طراحی شده است و **نیازی به هیچ مرحله ساختی (Build Step) ندارد**.
+
+برای استقرار نسخه خودتان، مراحل زیر را دنبال کنید:
+
+1.  یک مخزن (Repository) جدید در حساب GitHub خود ایجاد کنید.
+2.  تمام فایل‌های این پروژه (`index.html`, `index.tsx`, `App.tsx`, و غیره) را در مخزن خود آپلود کنید.
+3.  به بخش **Settings** مخزن خود بروید.
+4.  در منوی سمت چپ، روی **Pages** کلیک کنید.
+5.  در بخش "Build and deployment"، منبع (Source) را روی **Deploy from a branch** تنظیم کنید.
+6.  شاخه (Branch) را روی `main` (یا `master`) و پوشه را روی `/(root)` تنظیم کرده و روی **Save** کلیک کنید.
+
+![GitHub Pages Settings](https://docs.github.com/assets/cb-135334/images/help/pages/pages-source-publishing-options.png)
+
+پس از چند دقیقه، وب‌سایت شما در آدرسی مانند `https://YOUR_USERNAME.github.io/YOUR_REPOSITORY` فعال خواهد شد.

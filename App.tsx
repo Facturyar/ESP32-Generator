@@ -82,7 +82,7 @@ const App: React.FC = () => {
           </h1>
         </div>
         <a 
-          href="https://github.com/YOUR_GITHUB_REPO" 
+          href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-slate-400 hover:text-white transition-colors"
